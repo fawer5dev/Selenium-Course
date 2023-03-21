@@ -1,10 +1,8 @@
 # Import the necessary modules from Selenium
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 import time
 
 # Create a Edge browser instance
-
 driver = webdriver.Edge()
 t=3
 back="window.history.go(-1)"

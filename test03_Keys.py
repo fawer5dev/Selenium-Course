@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 import time
 
 # Create a Edge browser instance
-# driver = webdriver.Chrome()
 driver = webdriver.Edge()
 
 # Maximize the window
