@@ -16,7 +16,7 @@ t=2
 time.sleep(t)
 driver.implicitly_wait(15)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on DemoQA
 driver.get('https://demoqa.com/select-menu')
 
 # Find the SELECT MENU with the attribute CLASS_NAME and Select it.

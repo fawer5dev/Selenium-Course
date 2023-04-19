@@ -12,7 +12,7 @@ back2="window.history.go(2)"
 driver.maximize_window()
 time.sleep(t)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on DemoQA
 driver.get('https://demoqa.com/text-box')
 time.sleep(t)
 

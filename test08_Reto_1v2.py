@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 import time
 
 # Create a Edge browser instance
-# driver = webdriver.Chrome()
 driver = webdriver.Edge()
 
 # Maximize the window
@@ -15,7 +14,7 @@ driver.maximize_window()
 t=2
 time.sleep(t)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on testingqarvn
 driver.get('https://testingqarvn.com.es/contacto-2/')
 
 # scroll down window

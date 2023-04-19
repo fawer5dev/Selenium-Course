@@ -17,7 +17,7 @@ t=3
 # Wait for x seconds
 time.sleep(t)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on DemoQA
 driver.get('https://demoqa.com/checkbox')
 
 # Find the element with the 'userName' attribute XPath and enter the text xxx into it

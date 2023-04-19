@@ -10,7 +10,7 @@ driver = webdriver.Edge()
 # Maximize the window
 driver.maximize_window()
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on DemoQA
 driver.get('https://demoqa.com/text-box')
 
 # Find the element with the 'userName' attribute and enter the text xxx into it

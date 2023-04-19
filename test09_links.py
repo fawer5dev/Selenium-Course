@@ -4,14 +4,13 @@ from selenium.webdriver.common.by import By
 import time
 
 # Create a Edge browser instance
-# driver = webdriver.Chrome()
 driver = webdriver.Edge()
 
 # Wait for x seconds
 t=2
 time.sleep(t)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the module page on DemoQA
 driver.get('https://testingqarvn.com.es/colegio/')
 
 # Maximize the window
@@ -20,9 +19,6 @@ driver.maximize_window()
 # scroll down window
 driver.execute_script("window.scrollTo(0,300)")
 time.sleep(t)
-
-# obtain all links in the page
-# links = driver.find_element(By.TAG_NAME, 'a')
 
 # Find the elements links attribute XPath and click to accept
 # driver.find_element(By.XPATH, "//LABEL[@id='wsf-1-label-115-row-1']").click()

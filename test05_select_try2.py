@@ -10,7 +10,7 @@ class SeleniumExample:
         self.driver = webdriver.Edge()
 
     def navigate_to_page(self):
-        # Navigate to 'Text Box' page
+        # Navigate to the module page on DemoQA
         self.driver.get('https://demoqa.com/select-menu')
         self.driver.maximize_window()
 

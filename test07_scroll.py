@@ -13,7 +13,7 @@ driver = webdriver.Edge()
 t=2
 time.sleep(t)
 
-# Navigate to the 'Text Box' page on DemoQA
+# Navigate to the page on pixabay
 driver.get('https://pixabay.com/')
 
 # Maximize the window
