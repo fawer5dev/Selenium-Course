@@ -32,6 +32,7 @@ class base_test(unittest.TestCase):
         if error == "Epic sadface: Username and password do not match any user in this service":
             print("Los datos no son correctos")
             print("Prueba 1 OK")
+        # Wait for 2 seconds
         time.sleep(t)
 
     def test_login2(self):
@@ -49,6 +50,7 @@ class base_test(unittest.TestCase):
         if error == "Epic sadface: Username is required":
             print("Falta el nombre")
             print("Prueba 2 OK")
+        # Wait for 2 seconds
         time.sleep(t)
 
     def test_login3(self):
@@ -66,6 +68,7 @@ class base_test(unittest.TestCase):
         if error == "Epic sadface: Password is required":
             print("Falta el password")
             print("Prueba 3 OK")
+        # Wait for 2 seconds
         time.sleep(t)
 
     def test_login4(self):
@@ -99,8 +102,7 @@ class base_test(unittest.TestCase):
         if error == "Epic sadface: Username and password do not match any user in this service":
             print("Usuario o Contraseña incorrecta")
             print("Prueba 5 OK")
-
-        # Wait for x seconds
+        # Wait for 2 seconds
         time.sleep(t)
 
     def test_login6(self):
