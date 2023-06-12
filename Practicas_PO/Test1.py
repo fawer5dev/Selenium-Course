@@ -14,22 +14,37 @@ class base_test(unittest.TestCase):
         # Maximize the window
         self.driver.maximize_window()
 
-    # Define a test function
+    # Define a test function sending text
     def test1(self):
         driver = self.driver
         f = Funciones_Globales(driver)
-        f.Navegar("https://www.saucedemo.com/", 1)
-        # f.Texto_Xpath("//INPUT[@id='user-name']", "Fawer", .3)
-        # f.Texto_Xpath("//INPUT[@id='password']", "abc123", .3)
-        # f.Texto_ID("user-name", "Fawer", .3)
-        # f.Texto_ID("password", "abc123", .3)
-        # f.Texto_Xpath_Valida("//INPUT[@id='user-name']", "Fawer", t)
-        # f.Texto_Xpath_Valida("//INPUT[@id='password']", "abc123", t)
-        f.Texto_Mixto("id", "userName", "Fawer", tg)
-        f.Texto_Mixto("id", "userEmail", "xxx@gmail.com", tg)
-        f.Texto_Mixto("id", "currentAddress", "Demo uno de texto, para pruebas.", tg)
-        f.Texto_Mixto("id", "permanentAddress", "Demo uno de texto, para pruebas.", tg)
-        f.Click_Mixto("id", "submit", tg)
+        f.Navegar("https://www.saucedemo.com/", tg)
+        f.Texto_Mixto("id", "user-name", "standard_user", tg)
+        f.Texto_Mixto("id", "password", "secret_sauce", tg)
+        f.Click_Mixto("id", "login-button", tg)
+
+    # Define a test function click a select with a text
+    def test2(self):
+        driver = self.driver
+        f = Funciones_Globales(driver)
+        f.Navegar("https://testpages.herokuapp.com/styled/basic-html-form-test.html", tg)
+        f.Select_Xpath_Type("//SELECT[@name='dropdown']", "text", "Drop Down Item 5", tg)
+
+    # Define a test function upload a file
+    def test3(self):
+        driver = self.driver
+        f = Funciones_Globales(driver)
+        f.Navegar("https://testpages.herokuapp.com/styled/file-upload-test.html", tg)
+        f.Upload_Xpath("//INPUT[@id='fileinput']",
+                       "E://Mi PC//Programacion//Python//Selenium-Course//images//bicycle-g5335ffc14_1280.png", tg)
+
+    # Define a test function with multiple checkbox
+    def test4(self):
+        driver = self.driver
+        f = Funciones_Globales(driver)
+        f.Navegar("https://testpages.herokuapp.com/styled/basic-html-form-test.html", tg)
+        for n in range(2,3):
+            f.Check_Xpath_Multiples(tg, "(//INPUT[@type='checkbox'])["+str(n)+"]" )
 
     def tearDown(self):
         driver = self.driver
